@@ -16,7 +16,7 @@ locals {
 
 terraform {
   backend "s3" {
-    bucket = "xxxxx-tfstate-backend-bucket"
+    bucket = "<acct-id>-tfstate-backend-bucket"
     key    = "network/tfstate.tf"
     region = local.aws_region
   }
